@@ -27,3 +27,10 @@ Task::Task(string n, string desc, User* a_by, User* a_to, vector<Issue*>* i){
 int Task::get_id(){
 	return id_num;
 }
+
+Task::~Task(){
+	for(vector<Issue*>::iterator it = issues->begin(); it != issues->end(); ++it) {
+    	delete(*it);
+ }
+ delete(issues);
+}

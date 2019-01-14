@@ -15,4 +15,5 @@ private:
 public:
 	Goal(string, string);
 	Goal(string, string, vector<Task*>*);
+	~Goal();
 };

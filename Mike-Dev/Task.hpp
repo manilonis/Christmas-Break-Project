@@ -20,4 +20,5 @@ public:
 	string get_name();
 	string get_description();
 	User* get_assigned(int);
+	~Task();
 };
