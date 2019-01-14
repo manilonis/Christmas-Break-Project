@@ -7,4 +7,13 @@ Goal::Goal(string n, string d){
 	description = d;
 	id_num = current_num + 1;
 	current_num++;
+	tasks = NULL;
+}
+
+Goal::Goal(string n, string d, vector<Task*>* t){
+	name = n;
+	description = d;
+	id_num = current_num + 1;
+	current_num++;
+	tasks = t;
 }
