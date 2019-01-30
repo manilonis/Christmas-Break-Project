@@ -17,3 +17,10 @@ Goal::Goal(string n, string d, vector<Task*>* t){
 	current_num++;
 	tasks = t;
 }
+
+Goal::~Goal(){
+	for(vector<Task*>::iterator it = tasks->begin(); it != task->end(); ++it) {
+    	delete(*it);
+ 	}
+ delete(tasks);
+}
